@@ -1,7 +1,8 @@
 function check(){
-    let str = document.getElementById("txt").value;
+    let str01 = document.getElementById("txt").value;
     let palian;
 
+    let str = str01.toLowerCase();
     let len = str.length;
     console.log(str.charAt(0));
 
