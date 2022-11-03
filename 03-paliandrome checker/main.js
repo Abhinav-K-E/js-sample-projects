@@ -20,9 +20,9 @@ function check(){
     }
 
     if(palian == true){
-        document.getElementById("result").value ="Yes it is a paliandrome";
+        document.getElementById("result").value ="Yes it is a paliandrome ✅";
     }
     else{
-        document.getElementById("result").value ="It is not a paliandrome";
+        document.getElementById("result").value ="It is not a paliandrome ❌";
     }
 }
