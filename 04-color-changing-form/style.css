@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    background-color: #5F4B8BFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.main-box{
+    width: 350px;
+    height: 230px;
+    background-color: #fff;
+    box-shadow: 3px 3px 10px rgba(118, 118, 118, 0.685);
+    padding: 20px;
+}
+
+.item{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.item input[type=text]{
+    width: 100%;
+    height: 40px;
+    outline: none;
+    border: 0;
+    border-bottom: 1.5px solid #5F4B8BFF;
+}
+
+.item label{
+    width: 100px;
+    margin-right: 20px;
+}
+
+.btn{
+    width: 100%;
+    height: 40px;
+    margin-top: 20px;
+    background-color: #5F4B8BFF;
+    border: 1px solid rgb(91, 91, 91);
+    font-size: 20px;
+    color: #fff;
+}
+
+.color-box{
+    background-color: #fff;
+    width: 50px;
+    height: 230px;
+    box-shadow: 3px 3px 10px rgba(118, 118, 118, 0.685);
+    margin-left: 20px;
+    padding-top:15px;
+    padding-bottom:15px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.circle{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+}
+
+
+@media(max-width:481px){
+    .wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-box{
+        width: 320px;
+    }
+    .color-box{
+        flex-direction: row;
+        width: 320px;
+        height: 60px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-top: 25px;
+        margin-left: 0px;
+    }
+}
+
+@media(max-width:370px){
+    .wrapper{
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+    .main-box{
+        width: 290px;
+    }
+    .color-box{
+        flex-direction: row;
+        width: 290px;
+        height: 60px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-top: 25px;
+        margin-left: 0px;
+    }
+}
+
+
+
