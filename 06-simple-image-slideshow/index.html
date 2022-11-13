@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="wrapper">
+        <img id="slide" width="600" height="300">
+
+    </div>
+    <script>
+        let i =0;
+        let images = ['img01.jpg', 'img02.jpg','img03.jpg','img04.jpg'];
+
+        const time = 2000;
+
+        // change image 
+
+        change = () =>{
+            document.getElementById('slide').src=images[i];
+
+            if(i< images.length-1){
+                i++
+            }
+            else{
+                i=0;
+            }
+
+            setTimeout("change()",time);
+        }
+
+        window.onload = change();
+
+    </script>
+    
+</body>
+</html>
